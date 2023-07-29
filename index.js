@@ -12,7 +12,6 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// TODO: refaktor
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case "list":

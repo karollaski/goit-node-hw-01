@@ -1,17 +1,10 @@
 const fs = require("fs/promises");
 const path = require("path");
 
-/*
- * Skomentuj i zapisz wartość
- * const contactsPath = ;
- */
-
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 console.log(contactsPath);
 
-// TODO: udokumentuj każdą funkcję
 const listContacts = async () => {
-  // ...twój kod
   const data = await fs.readFile(contactsPath);
   return JSON.parse(data);
 };
@@ -19,7 +12,6 @@ const listContacts = async () => {
 console.log(listContacts);
 
 const getContactById = async (id) => {
-  // ...twój kod
   const contacts = await listContacts();
   return contacts.find((contact) => contact.id === id) || null;
 };
@@ -27,7 +19,6 @@ const getContactById = async (id) => {
 console.log(getContactById);
 
 const removeContact = async (id) => {
-  // ...twój kod
   const contacts = await listContacts();
   const index = contacts.findIndex((contact) => contact.id === id);
   if (index === -1) {
@@ -40,7 +31,6 @@ const removeContact = async (id) => {
 console.log(removeContact);
 
 const addContact = async (data) => {
-  // ...twój kod
   const contacts = await listContacts();
   const newContact = {
     id: Math.round(Math.random() * 100),
