@@ -16,7 +16,7 @@ node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
 
 Linki do screenów z wykonanych komend:
 
-https://ibb.co/F6JRgbw
+https://ibb.co/XbqdkPy
 https://ibb.co/b1p8hfT
 https://ibb.co/xY1N06c
 https://ibb.co/hfBJKTV
